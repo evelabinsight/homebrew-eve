@@ -7,7 +7,7 @@
 先添加 tap：
 
 ```bash
-brew tap Wuhualiang123/eve
+brew tap evelabinsight/eve
 ```
 
 然后安装：
@@ -19,7 +19,7 @@ brew install eve
 如果想显式指定 tap，也可以执行：
 
 ```bash
-brew install Wuhualiang123/eve/eve
+brew install evelabinsight/eve/eve
 ```
 
 安装完成后确认：
