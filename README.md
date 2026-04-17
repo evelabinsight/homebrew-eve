@@ -28,6 +28,8 @@ brew install evelabinsight/eve/eve
 eve --help
 ```
 
+这个 formula 会自动安装 `python@3.11`，`eve` 主命令以 Python 脚本方式运行，常用命令的启动速度会比之前的冻结二进制版本更快。
+
 ## 当前支持情况
 
 - 当前仓库已发布 `macOS x86_64` 包
