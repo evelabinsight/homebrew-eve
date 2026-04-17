@@ -8,7 +8,7 @@ class Eve < Formula
     if Hardware::CPU.arm?
       odie "No arm64 package has been published for eve yet."
     else
-      url "file:///Users/whl/StudioProjects/deviceking/tools/dist/release/eve-muse_1.0.1.0.0-224-g09370a2d-dirty-macos-x86_64.tar.gz"
+      url "https://raw.githubusercontent.com/Wuhualiang123/homebrew-eve/main/dist/eve-muse_1.0.1.0.0-224-g09370a2d-dirty-macos-x86_64.tar.gz"
       sha256 "5b488e670cbfc9cd2f249a7851819ba6666da3d588474cc1c9c9bc7f0c302bff"
     end
   end
