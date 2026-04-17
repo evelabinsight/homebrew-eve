@@ -31,9 +31,9 @@ eve --help
 ## 当前支持情况
 
 - 当前仓库已发布 `macOS x86_64` 包
-- `macOS arm64` 包暂未发布
+- 当前仓库已发布 `macOS arm64` 包
 
-如果在 Apple Silicon 机器上安装，当前 formula 会明确提示对应架构的包尚未发布。
+Intel Mac 和 Apple Silicon Mac 都可以直接通过当前 formula 安装。
 
 ## 仓库结构
 
