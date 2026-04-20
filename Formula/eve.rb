@@ -1,17 +1,17 @@
 class Eve < Formula
   desc "CLI tool for controlling Eve devices"
   homepage "https://github.com/meitu/deviceking"
-  version "muse_1.0.1.0.0-227-g9f685382-log1"
+  version "muse_1.0.1.0.0-227-g9f685382-log2"
   license "Proprietary"
   depends_on "python@3.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://raw.githubusercontent.com/evelabinsight/homebrew-eve/main/dist/eve-muse_1.0.1.0.0-227-g9f685382-log1-macos-arm64.tar.gz"
-      sha256 "46aeebbeb6da02ed5a797f5067067897a17becb82eb273c14bd982473f899d6d"
+      url "https://raw.githubusercontent.com/evelabinsight/homebrew-eve/main/dist/eve-muse_1.0.1.0.0-227-g9f685382-log2-macos-arm64.tar.gz"
+      sha256 "d69f029729656bc4dfe54ac7bac074a330890c0e249d6fb5fd15dccc733e6ed0"
     else
-      url "https://raw.githubusercontent.com/evelabinsight/homebrew-eve/main/dist/eve-muse_1.0.1.0.0-227-g9f685382-log1-macos-x86_64.tar.gz"
-      sha256 "cc8177a42241eeabd1961ef4db2bf27ad8bc42a3bd282c2000f49d26b730aab1"
+      url "https://raw.githubusercontent.com/evelabinsight/homebrew-eve/main/dist/eve-muse_1.0.1.0.0-227-g9f685382-log2-macos-x86_64.tar.gz"
+      sha256 "60d1f9526aa5dc972e0373b767a7919f00c8476c9cefe049287d607f210f0642"
     end
   end
 
