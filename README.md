@@ -44,10 +44,13 @@ eve --help
 
 ```bash
 eve match <device-id>
-eve config set-host <device-ip>
 ```
 
-完成后，默认设备信息会保存到本机配置中，日常调用不需要再传 `--host` 和 `--device-id`。
+匹配成功后，默认 DeviceId 和设备地址会保存到本机配置中，日常调用不需要再传 `--host` 和 `--device-id`。如果需要手动覆盖设备地址，再执行：
+
+```bash
+eve config set-host <device-ip>
+```
 
 常用设备命令：
 
