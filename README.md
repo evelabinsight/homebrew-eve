@@ -40,32 +40,33 @@ eve --help
 eve --help
 ```
 
-调用设备命令时需要指定设备地址和 DeviceId：
+首次使用先匹配设备并保存设备信息：
 
 ```bash
-eve --host <device-ip> --device-id <device-id> version
-eve --host <device-ip> --device-id <device-id> take_picture
-eve --host <device-ip> --device-id <device-id> install /path/to/app.apk
-eve --host <device-ip> --device-id <device-id> export_complete
-eve --host <device-ip> --device-id <device-id> log
+eve match <device-id>
+eve config set-host <device-ip>
+```
+
+完成后，默认设备信息会保存到本机配置中，日常调用不需要再传 `--host` 和 `--device-id`。
+
+常用设备命令：
+
+```bash
+eve version
+eve take_picture
+eve install /path/to/app.apk
+eve export_complete
+eve log
 ```
 
 图片检测：
 
 ```bash
-eve --host <device-ip> --device-id <device-id> detect_image /path/to/ORIGINAL
-eve --host <device-ip> --device-id <device-id> detect_images /path/to/cases
+eve detect_image /path/to/ORIGINAL
+eve detect_images /path/to/cases
 ```
 
 `detect_image` 会检测单套原图，并把结果返回到输入路径同级的 `RERUN` 目录。`detect_images` 会递归扫描多套原图，资源不完整的目录会跳过，最终输出检测成功和失败列表。
-
-可以保存默认设备信息，后续省略 `--host` 和 `--device-id`：
-
-```bash
-eve match <device-id>
-eve config set-host <device-ip>
-eve version
-```
 
 ## 当前支持情况
 
