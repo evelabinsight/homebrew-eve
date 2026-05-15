@@ -30,6 +30,41 @@ eve --help
 
 这个 formula 会安装当前架构对应的冻结二进制包，安装后可直接运行 `eve`。
 
+## 使用说明
+
+查看内置帮助：
+
+```bash
+eve --help
+```
+
+调用设备命令时需要指定设备地址和 DeviceId：
+
+```bash
+eve --host <device-ip> --device-id <device-id> version
+eve --host <device-ip> --device-id <device-id> take_picture
+eve --host <device-ip> --device-id <device-id> install /path/to/app.apk
+eve --host <device-ip> --device-id <device-id> export_complete
+eve --host <device-ip> --device-id <device-id> log
+```
+
+图片检测：
+
+```bash
+eve --host <device-ip> --device-id <device-id> detect_image /path/to/ORIGINAL
+eve --host <device-ip> --device-id <device-id> detect_images /path/to/cases
+```
+
+`detect_image` 会检测单套原图，并把结果返回到输入路径同级的 `RERUN` 目录。`detect_images` 会递归扫描多套原图，资源不完整的目录会跳过，最终输出检测成功和失败列表。
+
+可以保存默认设备信息，后续省略 `--host` 和 `--device-id`：
+
+```bash
+eve match <device-id>
+eve config set-host <device-ip>
+eve version
+```
+
 ## 当前支持情况
 
 - 当前仓库已发布 `macOS x86_64` 包
