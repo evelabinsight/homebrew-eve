@@ -28,7 +28,7 @@ brew install evelabinsight/eve/eve
 eve --help
 ```
 
-这个 formula 会自动安装 `python@3.11`，`eve` 主命令以 Python 脚本方式运行，常用命令的启动速度会比之前的冻结二进制版本更快。
+这个 formula 会安装当前架构对应的冻结二进制包，安装后可直接运行 `eve`。
 
 ## 当前支持情况
 
