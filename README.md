@@ -2,7 +2,7 @@
 
 `eve` 的 Homebrew tap 仓库。
 
-`eve` 是 DeviceKing 设备的局域网控制 CLI 工具，用于在本机终端直接连接设备并执行调试、运维和检测任务。它支持查询设备版本、触发拍照、安装升级 APK、导出成片和日志，也支持把本机原图导入设备执行图片检测，并将检测结果拉回本机。
+`eve` 是 DeviceKing 设备的局域网控制 CLI 工具，用于在本机终端直接连接设备并执行调试、运维和检测任务。它支持查询设备版本、触发拍照、安装升级 APK、导出图片和日志，也支持把本机原图导入设备执行图片检测，并将检测结果拉回本机。
 
 ## 安装
 
@@ -59,7 +59,7 @@ eve --help
 | `eve version` | 获取设备版本号、主板信息和左右从板版本信息。 |
 | `eve take_picture` | 触发设备拍照流程。 |
 | `eve install /path/to/app.apk` | 上传本地 APK 并触发设备安装升级。 |
-| `eve export_complete` | 拉取设备全部成片文件到本机 `~/Downloads/complete`。 |
+| `eve export_complete` | 拉取设备全部图片文件到本机 `~/Downloads/complete`。 |
 | `eve log` | 拉取左右从机和中机日志到本机 `~/Downloads/logs`。 |
 
 图片检测：
