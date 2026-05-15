@@ -42,34 +42,32 @@ eve --help
 
 首次使用先匹配设备并保存设备信息：
 
-```bash
-eve match <device-id>
-```
+| 指令 | 说明 |
+| --- | --- |
+| `eve match <device-id>` | 自动匹配设备，并保存默认 DeviceId 和设备地址。 |
 
 匹配成功后，默认 DeviceId 和设备地址会保存到本机配置中，日常调用不需要再传 `--host` 和 `--device-id`。如果需要手动覆盖设备地址，再执行：
 
-```bash
-eve config set-host <device-ip>
-```
+| 指令 | 说明 |
+| --- | --- |
+| `eve config set-host <device-ip>` | 手动保存默认设备地址，用于覆盖 `match` 保存的地址。 |
 
 常用设备命令：
 
-```bash
-eve version
-eve take_picture
-eve install /path/to/app.apk
-eve export_complete
-eve log
-```
+| 指令 | 说明 |
+| --- | --- |
+| `eve version` | 获取设备版本号、主板信息和左右从板版本信息。 |
+| `eve take_picture` | 触发设备拍照流程。 |
+| `eve install /path/to/app.apk` | 上传本地 APK 并触发设备安装升级。 |
+| `eve export_complete` | 拉取设备全部成片文件到本机 `~/Downloads/complete`。 |
+| `eve log` | 拉取左右从机和中机日志到本机 `~/Downloads/logs`。 |
 
 图片检测：
 
-```bash
-eve detect_image /path/to/ORIGINAL
-eve detect_images /path/to/cases
-```
-
-`detect_image` 会检测单套原图，并把结果返回到输入路径同级的 `RERUN` 目录。`detect_images` 会递归扫描多套原图，资源不完整的目录会跳过，最终输出检测成功和失败列表。
+| 指令 | 说明 |
+| --- | --- |
+| `eve detect_image /path/to/ORIGINAL` | 检测单套原图，结果返回到输入路径同级的 `RERUN` 目录。 |
+| `eve detect_images /path/to/cases` | 批量扫描多套原图，跳过资源不完整的目录，并输出检测成功和失败列表。 |
 
 ## 当前支持情况
 
