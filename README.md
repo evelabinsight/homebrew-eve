@@ -30,7 +30,7 @@ brew install evelabinsight/eve/eve
 eve --help
 ```
 
-这个 formula 会安装当前架构对应的冻结二进制包，安装后可直接运行 `eve`。
+这个 formula 会安装 `eve` 主命令脚本和当前架构对应的 `eve-wifi` helper，安装后可直接运行 `eve`。
 
 ## 使用说明
 
